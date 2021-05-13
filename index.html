@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JabTyper Gabriel</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body bgcolor="black">
+    <div id="geral">
+        <div id="titulo">
+            <h1>JabTyper</h1>
+        </div>
+        <div id="frases">
+            <input type="text" id="nome" placeholder="nome do jogador">
+            <ul class="informacoes">
+                <li>Você tem <span id="tempo">15 </span> segundos</li>
+            </ul>
+        </div>
+        <div id="campo">
+            <textarea id="campo-digitacao" placeholder="tudo começou quando..." cols="40" rows="6"></textarea>
+        </div>
+        <div id="botao">
+            <button id="botao-reset">Reset</button>
+        </div>
+        <ul>
+            <li><span id="caracteres-digitados">0</span> caracteres caracteres digitados</li>
+            <li><span id="palavras-digitadas">0</span> palavras</li>
+        </ul>
+
+        <div id="placar">
+            <h2 id="h2placar">Placar</h2>
+            <table id="tabela-resultado" border="1">
+                <thead>
+                    <th>Usuário</th>
+                    <th>Nº de palavras</th>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
